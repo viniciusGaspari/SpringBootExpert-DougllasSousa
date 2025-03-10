@@ -1,5 +1,5 @@
 # SpringBootExpert-DougllasSousa
-Curso de Spring Boot pelo Dougllas Sous
+Curso de Spring Boot pelo Dougllas Sousa
 
 (https://www.udemy.com/course/spring-boot-expert/)
 
