@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: CRUDCurso
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/crudcursolibrarydb
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate.format-sql: true
