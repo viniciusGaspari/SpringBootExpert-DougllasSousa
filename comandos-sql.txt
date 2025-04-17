@@ -1,0 +1,16 @@
+CREATE TABLE conta (
+    id UUID NOT NULL PRIMARY KEY,
+    login VARCHAR(20) NOT NULL UNIQUE,
+    senha VARCHAR(300) NOT NULL,
+    role_id UUID REFERENCES roles(id)
+);
+CREATE TABLE roles (
+    id UUID NOT NULL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL UNIQUE
+);
+
+INSERT INTO roles (id, nome) VALUES
+    ('1e74e0c1-8c6c-4ba4-9e09-4bfc0c2e93a0', 'ADMIN'),
+    ('2f85f1d2-9b7d-5cb5-8f10-5ccd1d3f94b1', 'USUARIO'),
+    ('3f96f2e3-ac8e-6dc6-af11-6dce2e4f05c2', 'ASSISTENTE');
+
